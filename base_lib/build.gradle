@@ -38,4 +38,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //api 可以依赖传递,implementation只能直接依赖的那个lib调用
     api project(path: ':base_router_lib')
+
+
 }

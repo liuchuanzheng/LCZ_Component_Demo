@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.liuchuanzheng.base_router_lib.config.ModuleServiceConfig;
 import com.liuchuanzheng.base_router_lib.factory.BaseProvideFactory;
+import com.orhanobut.logger.Logger;
 
 /**
  * @author: 刘传政
@@ -25,14 +26,13 @@ public  class BaseMainApplication extends BaseApplication {
      */
     public  void initModuleService(){
         for (String factory : ModuleServiceConfig.moduleFactorys) {
-            Log.i("liuchuanzheng",factory);
             try {
                 Class clazz = Class.forName(factory);
                 BaseProvideFactory baseProvideFactory = (BaseProvideFactory) clazz.newInstance();
                 baseProvideFactory.provide();
             } catch (Exception e) {
-                Log.i("liuchuanzheng","子模块初始化失败"+factory);
-                Log.i("liuchuanzheng",e.toString());
+                Logger.i("子模块初始化失败"+factory);
+                Logger.i(e.toString());
                 e.printStackTrace();
             }
         }

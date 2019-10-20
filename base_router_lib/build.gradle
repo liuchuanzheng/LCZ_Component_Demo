@@ -41,4 +41,10 @@ dependencies {
     // arouter-compiler 的注解依赖需要所有使用 ARouter 的 model 都添加依赖
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 
+    /*------------------【start】logger--------------------*/
+    //   地址：https://github.com/orhanobut/logger
+    //打log的著名库，使用方便，格式美观，便于管理。
+    api 'com.orhanobut:logger:2.2.0'
+    /*------------------【end】logger----------------------*/
+
 }
