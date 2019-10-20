@@ -23,6 +23,12 @@ android {
             //组件模式下设置applicationId
             applicationId "com.liuchuanzheng.login_lib"
         }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -53,4 +59,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':base_lib')
+    // arouter-compiler 的注解依赖需要所有使用 ARouter 的 model 都添加依赖
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 }
