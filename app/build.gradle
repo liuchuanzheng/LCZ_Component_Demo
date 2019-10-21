@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    //让studio提示程序员加前缀
+    //resourcePrefix 只能限定Xml资源，并不能限定图片资源，图片资源扔需要自身注意设置前缀名
+    resourcePrefix "${project.name}_"
 }
 
 dependencies {
