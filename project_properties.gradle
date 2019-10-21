@@ -1,7 +1,7 @@
 //这是整个项目的配置文件,版本号,依赖,是否独立运行等
 ext {
     //false:作为Lib组件存在， true:作为app存在
-    isLoginApplication = false  //登录模块开关
+    isLoginApplication = true  //登录模块开关
 
     //整个项目需要统一的一些版本号
     android = [
