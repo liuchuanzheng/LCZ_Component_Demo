@@ -15,7 +15,7 @@ import com.orhanobut.logger.Logger;
 public class LoginInterceptor implements IInterceptor {
     @Override
     public void process(Postcard postcard, InterceptorCallback callback) {
-        boolean hasLogin = false;
+        boolean hasLogin = true;
         if(!hasLogin) {
             Logger.i("你需要登录");
             //todo 去进行登录逻辑
