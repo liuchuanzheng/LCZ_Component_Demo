@@ -1,9 +1,5 @@
 package com.liuchuanzheng.base_lib.app;
 
-import com.liuchuanzheng.base_lib.router.config.ModuleServiceConfig;
-import com.liuchuanzheng.base_lib.router.factory.BaseProvideFactory;
-import com.orhanobut.logger.Logger;
-
 /**
  * @author: 刘传政
  * @date: 2019-10-20 11:47
@@ -15,23 +11,5 @@ public  class BaseMainApplication extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        initModuleService();
-    }
-
-    /**
-     * 初始化各个模块提供的服务
-     */
-    public  void initModuleService(){
-        for (String factory : ModuleServiceConfig.moduleFactorys) {
-            try {
-                Class clazz = Class.forName(factory);
-                BaseProvideFactory baseProvideFactory = (BaseProvideFactory) clazz.newInstance();
-                baseProvideFactory.provide();
-            } catch (Exception e) {
-                Logger.i("子模块初始化失败"+factory);
-                Logger.i(e.toString());
-                e.printStackTrace();
-            }
-        }
     }
 }

@@ -16,5 +16,6 @@ public class Path {
     public interface Login {
 
         String loginActivity = "/demo/loginActivity";
+        String helloService = "/login/helloService";
     }
 }
