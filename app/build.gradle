@@ -33,7 +33,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':base_lib')
     if (!rootProject.ext.isLoginApplication){
-        //runtimeOnly 依赖项仅在运行时对模块及其消费者可用
+        //runtimeOnly 依赖项仅在运行时对模块及其消费者可用.也就是说虽然你依赖了这个库,但是你的代码引用不了
+        //它中的代码,但是你的反射代码在运行时可以正常运行.这样就防止了模块间的相互引用,不好拆分,一个模块的代码
+        //改动牵扯到其他模块.
         runtimeOnly project(path: ':login_lib')
     }
 }
