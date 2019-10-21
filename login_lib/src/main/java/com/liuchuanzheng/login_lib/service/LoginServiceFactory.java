@@ -1,8 +1,8 @@
 package com.liuchuanzheng.login_lib.service;
 
 
-import com.liuchuanzheng.base_router_lib.factory.BaseProvideFactory;
-import com.liuchuanzheng.base_router_lib.factory.ModuleServiceFactory;
+import com.liuchuanzheng.base_lib.router.factory.BaseProvideFactory;
+import com.liuchuanzheng.base_lib.router.factory.ModuleServiceFactory;
 
 /**
  * @author: 刘传政

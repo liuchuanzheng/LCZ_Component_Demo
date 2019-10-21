@@ -1,4 +1,4 @@
-package com.liuchuanzheng.base_router_lib.config;
+package com.liuchuanzheng.base_lib.router.config;
 /**
  * @author: 刘传政
  * @date: 2019-10-20 11:53

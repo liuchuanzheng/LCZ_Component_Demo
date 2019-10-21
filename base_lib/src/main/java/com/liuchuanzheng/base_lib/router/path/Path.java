@@ -1,7 +1,4 @@
-package com.liuchuanzheng.base_router_lib.path;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+package com.liuchuanzheng.base_lib.router.path;
 
 /**
  * @author 刘传政

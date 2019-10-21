@@ -36,8 +36,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    //api 可以依赖传递,implementation只能直接依赖的那个lib调用
-    api project(path: ':base_router_lib')
 
+    // 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    api 'com.alibaba:arouter-api:1.5.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    /*------------------【start】logger--------------------*/
+    //   地址：https://github.com/orhanobut/logger
+    //打log的著名库，使用方便，格式美观，便于管理。
+    api 'com.orhanobut:logger:2.2.0'
+    /*------------------【end】logger----------------------*/
 
 }

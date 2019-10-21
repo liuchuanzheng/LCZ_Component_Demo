@@ -1,4 +1,4 @@
-package com.liuchuanzheng.base_router_lib.service;
+package com.liuchuanzheng.base_lib.router.service;
 
 public interface ILoginService {
 

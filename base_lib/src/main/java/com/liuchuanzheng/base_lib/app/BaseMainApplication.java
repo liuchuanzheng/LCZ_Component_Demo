@@ -1,10 +1,7 @@
 package com.liuchuanzheng.base_lib.app;
 
-import android.app.Application;
-import android.util.Log;
-
-import com.liuchuanzheng.base_router_lib.config.ModuleServiceConfig;
-import com.liuchuanzheng.base_router_lib.factory.BaseProvideFactory;
+import com.liuchuanzheng.base_lib.router.config.ModuleServiceConfig;
+import com.liuchuanzheng.base_lib.router.factory.BaseProvideFactory;
 import com.orhanobut.logger.Logger;
 
 /**

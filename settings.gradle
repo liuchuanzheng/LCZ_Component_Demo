@@ -1,2 +1,2 @@
-include ':app', ':base_lib', ':base_router_lib', ':login_lib'
+include ':app', ':base_lib', ':login_lib'
 rootProject.name='LCZ_Component_Demo'

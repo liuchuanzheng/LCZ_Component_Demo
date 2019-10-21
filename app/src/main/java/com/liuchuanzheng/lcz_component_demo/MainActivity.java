@@ -1,14 +1,14 @@
 package com.liuchuanzheng.lcz_component_demo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.liuchuanzheng.base_router_lib.factory.ModuleServiceFactory;
-import com.liuchuanzheng.base_router_lib.path.Path;
+import com.liuchuanzheng.base_lib.router.factory.ModuleServiceFactory;
+import com.liuchuanzheng.base_lib.router.path.Path;
 
 public class MainActivity extends AppCompatActivity {
 

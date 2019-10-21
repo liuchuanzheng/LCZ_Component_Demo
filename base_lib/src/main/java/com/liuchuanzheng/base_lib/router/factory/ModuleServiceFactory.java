@@ -1,8 +1,9 @@
-package com.liuchuanzheng.base_router_lib.factory;
+package com.liuchuanzheng.base_lib.router.factory;
 
 
-import com.liuchuanzheng.base_router_lib.empty_service.EmptyLoginService;
-import com.liuchuanzheng.base_router_lib.service.ILoginService;
+import com.liuchuanzheng.base_lib.router.empty_service.EmptyLoginService;
+import com.liuchuanzheng.base_lib.router.service.ILoginService;
+
 /**
  * @author: 刘传政
  * @date: 2019-10-18 17:53

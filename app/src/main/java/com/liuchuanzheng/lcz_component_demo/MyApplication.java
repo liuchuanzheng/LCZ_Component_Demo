@@ -1,13 +1,7 @@
 package com.liuchuanzheng.lcz_component_demo;
 
-import android.app.Application;
-import android.util.Log;
-
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.liuchuanzheng.base_lib.app.BaseLibApplication;
 import com.liuchuanzheng.base_lib.app.BaseMainApplication;
-import com.liuchuanzheng.base_router_lib.config.ModuleServiceConfig;
-import com.liuchuanzheng.base_router_lib.factory.BaseProvideFactory;
 
 
 /**

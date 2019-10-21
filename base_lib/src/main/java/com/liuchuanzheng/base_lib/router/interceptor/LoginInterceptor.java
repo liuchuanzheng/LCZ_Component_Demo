@@ -1,7 +1,6 @@
-package com.liuchuanzheng.base_router_lib.interceptor;
+package com.liuchuanzheng.base_lib.router.interceptor;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Interceptor;
